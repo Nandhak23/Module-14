@@ -1,23 +1,30 @@
-Exp No: 14b
-Circular Queue
-AIM
+# Exp No: 14b  
+## Circular Queue 
+---
 
+### AIM  
 To write a Python program with a function to insert float values into a Circular Queue.
-ALGORITHM
 
-    Start
-    Check if the Circular Queue is full
-        If size == max_size, print "Queue is full" and exit the function
-    If the queue is not full:
-        Read the element to be inserted
-        Convert it to float
-        Insert the element at the tail position
-        Update tail using: tail = (tail + 1) % max_size (circular increment)
-        Increment size by 1
-    End
+---
 
-PROGRAM
+### ALGORITHM
 
+1. Start  
+2. Check if the Circular Queue is full  
+   - If `size == max_size`, print `"Queue is full"` and exit the function  
+3. If the queue is not full:  
+   - Read the element to be inserted  
+   - Convert it to float  
+   - Insert the element at the `tail` position  
+   - Update tail using: `tail = (tail + 1) % max_size` (circular increment)  
+   - Increment `size` by 1  
+4. End
+
+---
+
+### PROGRAM
+
+```python
 class Queue:
     def __init__(self, size):
         self.items = [0] * size
@@ -52,9 +59,10 @@ q.enqueue(str)
 q.enqueue(str1)
 q.enqueue(str2)
 print(q.items)
+```
 
-OUTPUT
-image
-RESULT
+### OUTPUT
+<img width="1185" height="379" alt="image" src="https://github.com/user-attachments/assets/04681e57-4916-48e0-8fe3-71b0e8efd1ec" />
 
+### RESULT
 Therefore, the output is the example to write a Python program with a function to insert float values into a Circular Queue.
